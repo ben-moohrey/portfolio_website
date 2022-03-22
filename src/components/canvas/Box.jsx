@@ -2,6 +2,8 @@ import useStore from '@/helpers/store'
 import { useFrame } from '@react-three/fiber'
 import { useRef, useState } from 'react'
 
+
+
 const BoxComponent = ({ route }) => {
   const router = useStore((s) => s.router)
   // This reference will give us direct access to the THREE.Mesh object
@@ -15,6 +17,8 @@ const BoxComponent = ({ route }) => {
       : null
   )
   // Return the view, these are regular Threejs elements expressed in JSX
+
+  
   return (
     <>
       <mesh
@@ -27,6 +31,8 @@ const BoxComponent = ({ route }) => {
         <boxBufferGeometry args={[1, 1, 1]} />
         <meshPhysicalMaterial color={route === '/' ? 'orange' : 'hotpink'} />
       </mesh>
+
+     
       <directionalLight position={[5, 5, 5]} />
       <ambientLight />
     </>
