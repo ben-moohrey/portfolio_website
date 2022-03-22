@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("./nanoplanet.glb");
+  const { nodes, materials } = useGLTF("/nanoplanet.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
@@ -802,7 +802,7 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("./nanoplanet.glb");
+useGLTF.preload("/nanoplanet.glb");
 
 
 
