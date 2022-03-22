@@ -26,6 +26,7 @@ const LCanvas = ({ children }) => {
         top: 0,
       }}
       onCreated={(state) => state.events.connect(dom.current)}
+      dpr={[1,2]}
     >
       <LControl />
       <Preload all />

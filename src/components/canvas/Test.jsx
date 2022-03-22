@@ -54,11 +54,11 @@ const ModelComponent = ({ route }) => {
         <boxBufferGeometry args={[1, 1, 1]} />
 
       </mesh> */}
-      <Model/>
+      <Model position={[0,-visibleHeightAtZDepth(0,camera)/2,0]}/>
       {/* <Model /> */}
 
      
-      <directionalLight position={[5, 5, 5]} />
+      
       <ambientLight />
     </>
   )

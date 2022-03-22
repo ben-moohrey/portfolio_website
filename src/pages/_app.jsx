@@ -8,6 +8,8 @@ import '@/styles/index.css'
 import dynamic from 'next/dynamic'
 import { ChakraProvider } from '@chakra-ui/react'
 
+import theme from '../theme/theme'
+
 const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
   ssr: false,
 })
@@ -33,7 +35,7 @@ function App({ Component, pageProps = { title: 'index' } }) {
   const child = Component(pageProps).props.children
 
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Header title={pageProps.title} />
       {child && child.length > 1 ? (
         <Balance child={Component(pageProps).props.children} />
