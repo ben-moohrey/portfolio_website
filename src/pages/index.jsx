@@ -1,9 +1,14 @@
-import dynamic from 'next/dynamic'
-// Step 5 - delete Instructions components
-import Instructions from '@/components/dom/Instructions'
+import dynamic from 'next/dynamic';
 
+
+import HelloWorld from '@/components/dom/HelloWorld';
 
 import { Box } from "@chakra-ui/react";
+
+const Test = dynamic(() => import('@/components/canvas/Test'), {
+  ssr: false,
+})
+
 // import Shader from '@/components/canvas/Shader/Shader'
 
 // Dynamic import is used to prevent a payload when the website start that will include threejs r3f etc..
@@ -19,7 +24,7 @@ const DOM = () => {
   return (
     // Step 5 - delete Instructions components
     <>
-    
+      <HelloWorld align="center"/>
     </>
   )
 }
@@ -28,7 +33,7 @@ const DOM = () => {
 const R3F = () => {
   return (
     <>
-      <Shader />
+      <Test route='/' />
     </>
   )
 }

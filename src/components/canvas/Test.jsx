@@ -1,3 +1,4 @@
+
 import useStore from '@/helpers/store'
 import { useFrame, useThree } from '@react-three/fiber'
 import { useRef, useState, Suspense } from 'react'
@@ -17,7 +18,10 @@ const visibleHeightAtZDepth = ( depth, camera ) => {
   const vFOV = camera.fov * Math.PI / 180; 
 
   // Math.abs to ensure the result is always positive
-  return 2 * Math.tan( vFOV / 2 ) * Math.abs( depth );
+  let a =  2 * Math.tan( vFOV / 2 ) * Math.abs( depth );
+  console.log(a)
+  return a
+
 };
 
 const visibleWidthAtZDepth = ( depth, camera ) => {
@@ -54,12 +58,12 @@ const ModelComponent = ({ route }) => {
         <boxBufferGeometry args={[1, 1, 1]} />
 
       </mesh> */}
-      <Model position={[0,-visibleHeightAtZDepth(0,camera)/2,0]}/>
+      <Model position={[0,-1.5,0]}/>
       {/* <Model /> */}
 
      
       
-      <ambientLight />
+      <ambientLight intensity={.79}/>
     </>
   )
 }
