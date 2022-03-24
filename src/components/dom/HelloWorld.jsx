@@ -5,7 +5,7 @@ export default function HelloWorld() {
 
   return (
     <>
-      <Heading fontSize={'30px'} textAlign='center' mt={'10px'}>
+      <Heading fontWeight={'900'} fontSize={'30px'} textAlign='center' mt={'10px'} bg={'0xf1f1f1'}>
         Ben Murray
       </Heading>
 

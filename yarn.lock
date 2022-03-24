@@ -1661,6 +1661,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.3.tgz#c729ac22c35ae1c224cde10042ce7ab356bc4dda"
   integrity sha512-NUvBTj332dFRdiVkLlavXbDGoD2zyyeGYmMyrXOnctg/3e4pq95+rJgNfUP+k4v8UBk2L1aomGw9dDjbRdAmTg==
 
+"@fontsource/ubuntu@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@fontsource/ubuntu/-/ubuntu-4.5.6.tgz#9aa9203386d0f6c8ba6b28b67b9f39484b20dfa7"
+  integrity sha512-MOYHXrby1tF36wRydHN6YX70tlURth+gA1izuR6CynwwcUYYS+VpfTM60Uhwqo+rcp7NtnnkWpvLQt/CMCFttg==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.npmjs.org/@hapi/address/-/address-2.1.4.tgz"

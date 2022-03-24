@@ -8,7 +8,7 @@ import '@/styles/index.css'
 import dynamic from 'next/dynamic'
 import { ChakraProvider } from '@chakra-ui/react'
 
-import '@fontsource/roboto/900.css'
+import '@fontsource/roboto'
 
 import theme from '../theme/theme'
 
