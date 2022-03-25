@@ -9,6 +9,7 @@ import dynamic from 'next/dynamic'
 import { ChakraProvider } from '@chakra-ui/react'
 
 import '@fontsource/roboto'
+import '@fontsource/ubuntu'
 
 import theme from '../theme/theme'
 
